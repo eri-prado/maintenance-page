@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1.5px;
+  text-align: center;
+}
+
+
+main {
+  padding: 80px 15px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  gap: 40px;
+  background: linear-gradient(45deg, #FD2403, #fe8c00);
+  position: relative;
+  background-size: 400% 400%;
+  animation: colors 10s ease-in-out infinite;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 4rem;
+  color: #E8E8E8;
+  line-height: 1.4;
+}
+
+p {
+  color: #E8E8E8;
+}
+
+#logo {
+  padding: 10px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+
+.countdown {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  text-align: center;
+  gap: 50px;
+}
+
+.countdown .item {
+  min-width: 120px;
+  padding: 10px 10px;
+  background-color: #E8E8E8;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.item h2 {
+  font-size: 4rem;
+  color: #FD2403;
+}
+
+.item p {
+  color: #FD2403;
+
+}
+
+.social-media p {
+  padding-bottom: 15px;
+}
+
+@keyframes colors {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@media (max-width: 768px) {
+
+  main {
+    padding: 50px 10px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .countdown {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .item h2 {
+    font-size: 2rem;
+  }
+
+  .countdown .item {
+    min-width: 120px;
+    padding: 10px 10px;
+  }
+}
